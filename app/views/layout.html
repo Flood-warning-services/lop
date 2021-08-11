@@ -67,7 +67,20 @@
   {% block footer %}
     {{ govukFooter({
       meta: {
-        items: [],
+        items: [
+        {
+          href: "#foreword",
+          text: "Foreword"
+        },
+        {
+          href: "#2",
+          text: "Our team"
+        },
+        {
+          href: "#3",
+          text: "Challenges we face"
+        }
+        ],
         html: 'Built by the <a href="https://www.gov.uk/government/organisations/environment-agency" class="govuk-footer__link">Environment Agency</a>'
       }
     }) }}
