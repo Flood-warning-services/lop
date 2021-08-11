@@ -1,0 +1,96 @@
+{% extends "layout.html" %}
+
+{% block pageTitle %} 
+	Add warnings for this location
+{% endblock %} 
+
+{% block beforeContent %}
+	{{ govukPhaseBanner({tag: {text: "draft"}, html: 'These pages are a work in progress.'}) }}
+{% endblock %} 
+
+{% block content %}
+	<div class="govuk-grid-row">
+		<div class="govuk-grid-column-three-quarters">
+			<h1 class="govuk-heading-xl">Add warnings for this location</h1>
+			<p>You have chosen to receive flood information for this location:</p>
+
+			<h3 class="govuk-heading-s">Tidal Thames at the Isle of Dogs north of South Dock</p>
+
+			<div class="govuk-inset-text">
+				<p>River Thames at the Isle of Dogs north of South Dock including Canary Wharf, Blackwall, South Bromley, Poplar and Limehouse</p>
+			</div>
+
+			<p><a class="govuk-link" href="/">Change location</a></p>
+
+			<h2 class="govuk-heading-m">Add existing contact details to this location</h2>
+			
+			<p>Flood warnings can be sent any time of the day or night. When a warning is sent, it is important you are alerted. It's for this reason that we advise you register to get warnings by telephone call and text. If you register to be contacted on a mobile phone, you should ensure that it is set to wake you if a warning is sent at night.</p>
+			
+				<table class="govuk-table">
+					<thead class="govuk-table__head">
+					  <tr class="govuk-table__row">
+						<th scope="col" class="govuk-table__header">How we'll send the message</th>
+						<th scope="col" class="govuk-table__header">The number or address we'll use</th>
+						<th scope="col" class="govuk-table__header">Sign up</th>
+					  </tr>
+					</thead>
+					<tbody class="govuk-table__body">
+					  <tr class="govuk-table__row">
+						<th scope="row" class="govuk-table__header">By Telephone</th>
+						<td class="govuk-table__cell">07795127298</td>
+						<td class="govuk-table__cell"><a class="govuk-link" href="/">Add this contact</a></td>
+					  </tr>
+					  <tr class="govuk-table__row">
+						<th scope="row" class="govuk-table__header">By Email</th>
+						<td class="govuk-table__cell">ben.smedley@environment-agency.gov.uk</td>
+						<td class="govuk-table__cell"><a class="govuk-link" href="/">Add this contact</a></td>
+					  </tr>
+					</tbody>
+				</table>
+			
+			<h2 class="govuk-heading-m">Add new contact details to this location</h2>
+
+			<div class="govuk-form-group">
+				<label class="govuk-label" for="telephone-number">
+				  Telephone number
+				</label>
+				<input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+			</div>
+
+			<div class="govuk-form-group">
+				<label class="govuk-label" for="telephone-number">
+					Mobile telephone number for texts
+				</label>
+				<input class="govuk-input govuk-input--width-20" id="telephone-number" name="telephone-number" type="tel" autocomplete="tel">
+			</div>
+
+			<div class="govuk-form-group">
+				<label class="govuk-label" for="email">
+					Email address
+				</label>
+				<input class="govuk-input" id="email" name="email" type="email" spellcheck="false" aria-describedby="email-hint" autocomplete="email">
+			</div>
+
+			<h2 class="govuk-heading-m">Choose the messages you want to get</h2>
+
+			<div class="govuk-form-group">
+				<fieldset class="govuk-fieldset">
+					<div class="govuk-checkboxes" data-module="govuk-checkboxes">
+						<div class="govuk-checkboxes__item">
+						<input class="govuk-checkboxes__input" id="remove" name="remove" type="checkbox" value="remove">
+						<label class="govuk-label govuk-checkboxes__label" for="remove">
+						Send me messages to tell me when flood warnings have stopped
+						</label>
+					</div>
+					</div>
+				</fieldset>
+			 </div>
+
+			 <button class="govuk-button" data-module="govuk-button">
+				Save and continue
+			  </button>
+
+		</div>
+	</div>
+
+{% endblock %}
