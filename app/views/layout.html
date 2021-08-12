@@ -49,6 +49,31 @@
     containerClasses: "govuk-width-container"
   }) }}
 
+  {{ govukHeader({
+    homepageUrl: "#",
+    serviceName: serviceName,
+    serviceUrl: "#",
+    navigation: [
+      {
+        href: "#foreword",
+        text: "Foreword",
+        active: true
+      },
+      {
+        href: "#2",
+        text: "Navigation item 2"
+      },
+      {
+        href: "#3",
+        text: "Navigation item 3"
+      },
+      {
+        href: "#4",
+        text: "Navigation item 4"
+      }
+    ]
+  }) }}
+
 {% endblock %}
 
 {% block beforeContent %}
