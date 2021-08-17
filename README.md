@@ -8,4 +8,4 @@ An online version has been drafted on Heroku at the address below:
 * username: lop
 * password: lop
 
-Updates to the master branch of the LOP GitHUb repo will be automatically deployed to Heroku. 
+Updates to the main branch of the LOP GitHub repo will be automatically deployed to Heroku. 
