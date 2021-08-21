@@ -16,16 +16,6 @@ $govuk-assets-path: '/govuk/assets/';
 
 // Add extra styles here, or re-organise the Sass files in whichever way makes most sense to you
 
-@import "related-items";
-
-.nojs-hidden {
-  display: none;
-}
-
-.js-enabled .nojs-hidden {
-  display: initial;
-}
-
 .govuk-header__logo, .govuk-footer__link.govuk-footer__copyright-logo {
   display: none;
 }
