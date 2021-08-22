@@ -8,4 +8,8 @@ An online version has been drafted on Heroku at the address below:
 * username: lop
 * password: lop
 
+## Making changes
+
 Updates to the main branch of the LOP GitHub repo will be automatically deployed to Heroku. 
+
+To run the page locally, run ``npm install`` then ``npm start`` and visit ``localhost:30000``
