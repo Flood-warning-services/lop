@@ -5,8 +5,6 @@ This Local Outcome Plan sets out how the Incident Management & Resilience (IM&R)
 An online version has been drafted on Heroku at the address below:
 
 * https://imr-lop.herokuapp.com/
-* username: lop
-* password: lop
 
 ## Making changes
 
